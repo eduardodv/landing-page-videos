@@ -10,6 +10,8 @@ import './styles/globals.css'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/themes/default'
 
+import { Header } from '@/components/Header/page'
+
 const fontPlusJakartaSans = localFont({
   src: [
     {
@@ -28,7 +30,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="pt-BR">
       <body className={fontPlusJakartaSans.className}>
         <ThemeProvider theme={defaultTheme}>
-          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          <StyledComponentsRegistry>
+            <Header />
+            {children}
+          </StyledComponentsRegistry>
         </ThemeProvider>
       </body>
     </html>
