@@ -7,7 +7,7 @@ import logoImage from '../../assets/logo.png'
 export function Header() {
   return (
     <HeaderContainer>
-      <Image src={logoImage} width={194} height={42} alt="" />
+      <Image src={logoImage} width={200} height={49} alt="" />
     </HeaderContainer>
   )
 }

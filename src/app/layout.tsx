@@ -11,6 +11,7 @@ import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/themes/default'
 
 import { Header } from '@/components/Header/page'
+import { Footer } from '@/components/Footer/page'
 
 const fontPlusJakartaSans = localFont({
   src: [
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <StyledComponentsRegistry>
             <Header />
             {children}
+            <Footer />
           </StyledComponentsRegistry>
         </ThemeProvider>
       </body>
