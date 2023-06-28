@@ -1,3 +1,5 @@
+import { TopBanner } from './components/TopBanner/page'
+
 export const metadata = {
   title: 'Leadster',
   description:
@@ -5,5 +7,9 @@ export const metadata = {
 }
 
 export default function Home() {
-  return <main>Home</main>
+  return (
+    <main>
+      <TopBanner />
+    </main>
+  )
 }
