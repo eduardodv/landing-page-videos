@@ -1,0 +1,100 @@
+{
+  "footer": {
+    "nav": [
+      {
+        "id": 0,
+        "title": "Links Principais",
+        "links": [
+          {
+            "label": "Home",
+            "url": "#home"
+          },
+          {
+            "label": "Ferramentas",
+            "url": "#ferramentas"
+          },
+          {
+            "label": "Preços",
+            "url": "#precos"
+          },
+          {
+            "label": "Contato",
+            "url": "#contato"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Cases",
+        "links": [
+          {
+            "label": "Geração de Leads B2B",
+            "url": "#geracao-de-leads-b2b"
+          },
+          {
+            "label": "Geração de Leads em Software",
+            "url": "#geracao-de-leads-em-software"
+          },
+          {
+            "label": "Geração de Leads em Imobiliária",
+            "url": "#geracao-de-leads-em-imobiliaria"
+          },
+          {
+            "label": "Cases de Sucesso",
+            "url": "#cases-de-sucesso"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Materiais",
+        "links": [
+          {
+            "label": "Blog",
+            "url": "#blog"
+          },
+          {
+            "label": "Parceria com Agências",
+            "url": "#parceria-com-agencias"
+          },
+          {
+            "label": "Guia Definitivo do Marketing",
+            "url": "#guia-definitivo-do-marketing"
+          },
+          {
+            "label": "Materiais Gratuitos",
+            "url": "#materiais-gratuitos"
+          }
+        ]
+      }
+    ],
+    "customn_nav": {
+      "title": "Siga a Leadster",
+      "email": "contato@leadster.com.br",
+      "phone": "42988289851",
+      "socials": [
+        {
+          "label": "Linkedin",
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/leadster-platform"
+        },
+        {
+          "label": "Facebook",
+          "type": "facebook",
+          "url": "https://www.facebook.com/leadsterplatform"
+        },
+        {
+          "label": "Instagram",
+          "type": "instagram",
+          "url": "https://www.instagram.com/leadster.com.br/"
+        }
+      ]
+    },
+    "info": {
+      "copyright": "Copyright © 2015 - 2022 Todos os direitos reservados",
+      "link_site": "https://leadster.com.br/",
+      "address": "Rua José Loureiro, 464 - Centro - Curitiba PR - CEP: 80010-000",
+      "use_term": "https://leadster.com.br/termos_de_uso/"
+    }
+  }
+}
