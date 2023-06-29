@@ -1,4 +1,5 @@
 import { TopBanner } from './components/TopBanner/page'
+import { DemoBanner } from './components/DemoBanner/page'
 
 export const metadata = {
   title: 'Leadster',
@@ -10,6 +11,8 @@ export default function Home() {
   return (
     <main>
       <TopBanner />
+      <br />
+      <DemoBanner />
     </main>
   )
 }

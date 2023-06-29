@@ -5,6 +5,14 @@
     "title_custom": "Mais Conversão",
     "subtitle": "Conheça as estratégias que <strong>mudaram o jogo</strong> e como aplicá-las no seu negócio"
   },
+  "banner_demo": {
+    "title": "Pronto para triplicar sua <strong>Geração de Leads?</strong>",
+    "subtitle": "Criação e ativação em <strong>4 minutos.</strong>",
+    "button": {
+      "label": "Ver Demonstração",
+      "link": "#"
+    }
+  },
   "footer": {
     "nav": [
       {
