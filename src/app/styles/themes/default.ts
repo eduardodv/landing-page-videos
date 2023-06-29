@@ -4,6 +4,7 @@ export const defaultTheme = {
 
     'modal-overlay': '#7c8c98',
 
+    'blue-200': '#09b7f6',
     'blue-300': '#f0f8ff',
     'blue-400': '#067eff',
     'blue-500': '#0a83ff',
