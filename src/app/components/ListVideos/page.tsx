@@ -2,15 +2,24 @@
 
 import { Pagination } from '@/components/Pagination/page'
 import { VideoItem } from './VideoItem/page'
-import { ErrorMessage, List, ListVideosContainer } from './styles'
+import {
+  ErrorMessage,
+  HeaderFilters,
+  List,
+  ListVideosContainer,
+} from './styles'
 
 import data from '@/data/data.json'
+import { Categories } from '@/components/Categories/page'
 const { videos } = data
 
 export function ListVideos() {
   return (
     <ListVideosContainer>
       <div className="container">
+        <HeaderFilters>
+          <Categories />
+        </HeaderFilters>
         <List>
           {videos.map((item) => {
             return (
