@@ -1,4 +1,5 @@
 import { TopBanner } from './components/TopBanner/page'
+import { ListVideos } from './components/ListVideos/page'
 import { DemoBanner } from './components/DemoBanner/page'
 
 export const metadata = {
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <main>
       <TopBanner />
-      <br />
+      <ListVideos />
       <DemoBanner />
     </main>
   )
