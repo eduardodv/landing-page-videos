@@ -9,6 +9,14 @@ export const ListVideosContainer = styled.section`
   }
 `
 
+export const HeaderFilters = styled.div`
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4.0625rem;
+  padding-bottom: 1.625rem;
+  border-bottom: 2px solid ${(props) => props.theme.colors['gray-400']};
+`
+
 export const List = styled.div`
   display: grid;
   gap: 1.75rem;
