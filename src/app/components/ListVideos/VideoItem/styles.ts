@@ -57,7 +57,7 @@ export const VideoItemContainer = styled.button`
   overflow: hidden;
   cursor: pointer;
   background-color: #fff;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 13px 15px rgba(0, 0, 0, 0.1);
 
   &:hover {
     ${ImageVideo} {
