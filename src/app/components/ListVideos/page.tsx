@@ -1,5 +1,6 @@
 'use client'
 
+import { Pagination } from '@/components/Pagination/page'
 import { VideoItem } from './VideoItem/page'
 import { ErrorMessage, List, ListVideosContainer } from './styles'
 
@@ -24,6 +25,7 @@ export function ListVideos() {
         {videos.length <= 0 && (
           <ErrorMessage>Nenhum vídeo encontrato.</ErrorMessage>
         )}
+        <Pagination />
       </div>
     </ListVideosContainer>
   )

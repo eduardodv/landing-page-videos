@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const ListVideosContainer = styled.section`
   padding: 5rem 0;
   color: ${(props) => props.theme.colors['blue-800']};
+
+  @media (max-width: 576px) {
+    padding: 3rem 0;
+  }
 `
 
 export const List = styled.div`
