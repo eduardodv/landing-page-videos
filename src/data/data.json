@@ -5,6 +5,28 @@
     "title_custom": "Mais Conversão",
     "subtitle": "Conheça as estratégias que <strong>mudaram o jogo</strong> e como aplicá-las no seu negócio"
   },
+  "videos": [
+    {
+      "id": 0,
+      "image_src": "/images/thumbnail.png",
+      "title": "Como aumentar sua Geração de Leads feat. Traktor"
+    },
+    {
+      "id": 1,
+      "image_src": "/images/thumbnail.png",
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+    },
+    {
+      "id": 2,
+      "image_src": "/images/thumbnail.png",
+      "title": "Lorem ipsum dolor sit amet consectetur"
+    },
+    {
+      "id": 4,
+      "image_src": "/images/thumbnail.png",
+      "title": "Lorem amet consectetur adipisicing"
+    }
+  ],
   "banner_demo": {
     "title": "Pronto para triplicar sua <strong>Geração de Leads?</strong>",
     "subtitle": "Criação e ativação em <strong>4 minutos.</strong>",
