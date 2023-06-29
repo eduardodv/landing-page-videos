@@ -11,6 +11,7 @@ import {
 
 import data from '@/data/data.json'
 import { Categories } from '@/components/Categories/page'
+import { Sorting } from '@/components/Sorting/page'
 const { videos } = data
 
 export function ListVideos() {
@@ -19,6 +20,7 @@ export function ListVideos() {
       <div className="container">
         <HeaderFilters>
           <Categories />
+          <Sorting />
         </HeaderFilters>
         <List>
           {videos.map((item) => {

@@ -15,6 +15,13 @@ export const HeaderFilters = styled.div`
   margin-bottom: 4.0625rem;
   padding-bottom: 1.625rem;
   border-bottom: 2px solid ${(props) => props.theme.colors['gray-400']};
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    > nav {
+      order: 2;
+    }
+  }
 `
 
 export const List = styled.div`
