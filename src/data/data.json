@@ -8,23 +8,176 @@
   "videos": [
     {
       "id": 0,
-      "image_src": "/images/thumbnail.png",
-      "title": "Como aumentar sua Geração de Leads feat. Traktor"
+      "category": "Agências",
+      "title": "Principais plataformas de marketing conversacional",
+      "video_id": "yju8RTdhHQ0",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quod qui similique magnam ex nesciunt, et atque cupiditate saepe, maiores, nam accusantium consequuntur ullam. Nisi, aperiam iusto. Excepturi, tenetur velit?",
+      "files": [
+        {
+          "name": "Spreadsheet.xls",
+          "file": "#!",
+          "type": "xls"
+        },
+        {
+          "name": "Document.doc",
+          "file": "#!",
+          "type": "doc"
+        },
+        {
+          "name": "Presentation.ppt",
+          "file": "#!",
+          "type": "ppt"
+        },
+        {
+          "name": "Folder.zip",
+          "file": "#!",
+          "type": "zip"
+        }
+      ]
     },
     {
       "id": 1,
-      "image_src": "/images/thumbnail.png",
-      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+      "category": "Chatbot",
+      "title": "Como usar a inteligência artificial nos negócios?",
+      "video_id": "lzuB5jLaLWc",
+      "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+      "files": [
+        {
+          "name": "Presentation.ppt",
+          "file": "#!",
+          "type": "ppt"
+        },
+        {
+          "name": "Folder",
+          "file": "#!",
+          "type": "zip"
+        }
+      ]
     },
     {
       "id": 2,
-      "image_src": "/images/thumbnail.png",
-      "title": "Lorem ipsum dolor sit amet consectetur"
+      "category": "Mídia Paga",
+      "title": "Alternativas para um futuro sem cookies",
+      "video_id": "vcx76GCSuXA",
+      "description": "Lorem ipsum dolor sit amet",
+      "files": [
+        {
+          "name": "Folder",
+          "file": "#!",
+          "type": "zip"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Marketing Digital",
+      "title": "Por dentro da plataforma da Leadster",
+      "video_id": "94RY0tD4chE",
+      "description": "Lorem ipsum dolor sit amet",
+      "files": [
+        {
+          "name": "Document.doc",
+          "file": "#!",
+          "type": "doc"
+        },
+        {
+          "name": "Presentation.ppt",
+          "file": "#!",
+          "type": "ppt"
+        }
+      ]
     },
     {
       "id": 4,
-      "image_src": "/images/thumbnail.png",
-      "title": "Lorem amet consectetur adipisicing"
+      "category": "Geração de Leads",
+      "title": "Referências para Startups: Livros, Cursos e Profissionais",
+      "video_id": "uKlBCWtbw9w",
+      "description": "Lorem ipsum dolor sit amet",
+      "files": []
+    },
+    {
+      "id": 5,
+      "category": "Mídia Paga",
+      "title": "Quanto investir em Mídia Paga? A pergunta de MILHÕES",
+      "video_id": "GcvZ9dWhRks",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quod qui similique magnam ex nesciunt, et atque cupiditate saepe, maiores, nam accusantium consequuntur ullam. Nisi, aperiam iusto. Excepturi, tenetur velit?",
+      "files": [
+        {
+          "name": "Spreadsheet.xls",
+          "file": "#!",
+          "type": "xls"
+        },
+        {
+          "name": "Document.doc",
+          "file": "#!",
+          "type": "doc"
+        },
+        {
+          "name": "Presentation.ppt",
+          "file": "#!",
+          "type": "ppt"
+        },
+        {
+          "name": "Folder.zip",
+          "file": "#!",
+          "type": "zip"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "Mídia Paga",
+      "title": "Por que apostar no Marketing Conversacional? Conheça os benefícios para empresas",
+      "video_id": "nPlyLHqDaJw",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quod qui similique magnam ex nesciunt, et atque cupiditate saepe, maiores, nam accusantium consequuntur ullam. Nisi, aperiam iusto. Excepturi, tenetur velit?",
+      "files": [
+        {
+          "name": "Folder.zip",
+          "file": "#!",
+          "type": "zip"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "category": "Agências",
+      "title": "Qual a diferença entre os cookies first-party e third-party?",
+      "video_id": "sgddXeJfR64",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quod qui similique magnam ex nesciunt, et atque cupiditate saepe, maiores, nam accusantium consequuntur ullam. Nisi, aperiam iusto. Excepturi, tenetur velit?",
+      "files": [
+        {
+          "name": "Presentation.ppt",
+          "file": "#!",
+          "type": "ppt"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "category": "Chatbot",
+      "title": "Inteligência artificial e empregabilidade",
+      "video_id": "o6qeMW-UUb0",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quod qui similique magnam ex nesciunt, et atque cupiditate saepe, maiores, nam accusantium consequuntur ullam. Nisi, aperiam iusto. Excepturi, tenetur velit?",
+      "files": []
+    },
+    {
+      "id": 9,
+      "category": "Geração de Leads",
+      "title": "Estratégias de curto e longo prazo no Marketing Digital",
+      "video_id": "PHAfkczqlMY",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quod qui similique magnam ex nesciunt, et atque cupiditate saepe, maiores, nam accusantium consequuntur ullam. Nisi, aperiam iusto. Excepturi, tenetur velit?",
+      "files": [
+        {
+          "name": "Presentation.ppt",
+          "file": "#!",
+          "type": "ppt"
+        },
+        {
+          "name": "Folder.zip",
+          "file": "#!",
+          "type": "zip"
+        }
+      ]
     }
   ],
   "banner_demo": {

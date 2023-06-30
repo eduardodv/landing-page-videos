@@ -2,6 +2,9 @@
 
 import { Pagination } from '@/components/Pagination/page'
 import { VideoItem } from './VideoItem/page'
+import { Categories } from '@/components/Categories/page'
+import { Sorting } from '@/components/Sorting/page'
+
 import {
   ErrorMessage,
   HeaderFilters,
@@ -10,8 +13,6 @@ import {
 } from './styles'
 
 import data from '@/data/data.json'
-import { Categories } from '@/components/Categories/page'
-import { Sorting } from '@/components/Sorting/page'
 const { videos } = data
 
 export function ListVideos() {
@@ -27,8 +28,11 @@ export function ListVideos() {
             return (
               <VideoItem
                 key={item.id}
+                category={item.category}
                 title={item.title}
-                imageSrc={item.image_src}
+                videoId={item.video_id}
+                description={item.description}
+                files={item.files}
               />
             )
           })}
