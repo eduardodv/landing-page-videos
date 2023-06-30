@@ -1,14 +1,43 @@
 import { PageItem, PaginationContainer } from './styles'
 
-export function Pagination() {
+interface PaginationProps {
+  postsPerPage: number
+  totalPosts: number
+  currentPage: number
+  paginate: (pageNumber: number) => void
+}
+
+export function Pagination({
+  postsPerPage,
+  totalPosts,
+  currentPage,
+  paginate,
+}: PaginationProps) {
+  const pageNumbers = []
+
+  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+    pageNumbers.push(i)
+  }
+
+  function handlePaginate(number: number) {
+    paginate(number)
+  }
+
   return (
     <PaginationContainer>
       <strong>Página</strong>
       <div>
-        <PageItem>1</PageItem>
-        <PageItem>2</PageItem>
-        <PageItem className="active">3</PageItem>
-        <PageItem>4</PageItem>
+        {pageNumbers.map((number) => {
+          return (
+            <PageItem
+              onClick={() => handlePaginate(number)}
+              key={number}
+              className={number === currentPage ? 'active' : ''}
+            >
+              {number}
+            </PageItem>
+          )
+        })}
       </div>
     </PaginationContainer>
   )
