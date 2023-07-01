@@ -1,8 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Landing Page Leadster
 
-First, run the development server:
+Para desenvolver o projeto para o teste de Front-End da Leadster utilizei as tecnologias propostas pela mesma, como: Nextjs, typescript e styled-components.
+
+Fora do que foi proposto resolvi utilizar a biblioteca Radix para a criação do modal, ela permite criar componentes sem estilos pré definidos porém com uma acessibilidade excelente.
+
+Como não havia uma API para comunicação resolvi utilizar um arquivo json para cadastrar os dados, também optei por utilizar os vídeos e thumbnails do YouTube para não ser necessário a instalação de uma biblioteca de video player e tornar o desenvolvimento um pouco mais simples.
+
+Foi criado um arquivo de tema padrão do styled-components para separar as cores do projeto.
+
+Na hora de estruturar as pastas resolvi separar em vários componentes para serem reaproveitados caso o projeto venha a crescer.
+
+### Demo
+
+[Landing Page](https://landing-page-videos.vercel.app/)
+
+## Rodando o projeto
+
+Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
@@ -12,23 +27,14 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Rodando os testes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para executar os testes:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm test
+# or
+yarn test
+# or
+pnpm test
+```
