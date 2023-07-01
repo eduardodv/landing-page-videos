@@ -10,8 +10,8 @@ import './styles/globals.css'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/themes/default'
 
-import { Header } from '@/components/Header/page'
-import { Footer } from '@/components/Footer/page'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 const fontPlusJakartaSans = localFont({
   src: [

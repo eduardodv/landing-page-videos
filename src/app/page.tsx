@@ -1,6 +1,6 @@
-import { TopBanner } from './components/TopBanner/page'
-import { ListVideos } from './components/ListVideos/page'
-import { DemoBanner } from './components/DemoBanner/page'
+import { TopBanner } from './components/TopBanner'
+import { ListVideos } from './components/ListVideos'
+import { DemoBanner } from './components/DemoBanner'
 
 export const metadata = {
   title: 'Leadster',

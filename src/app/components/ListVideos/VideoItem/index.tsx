@@ -11,7 +11,7 @@ import {
 } from './styles'
 
 import playImage from '@/assets/icons/play.svg'
-import { Modal } from '@/components/Modal/page'
+import { Modal } from '@/components/Modal'
 
 interface File {
   name: string

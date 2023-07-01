@@ -2,11 +2,11 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import { Pagination } from '@/components/Pagination/page'
-import { VideoItem } from './VideoItem/page'
-import { Categories } from '@/components/Categories/page'
-import { Sorting } from '@/components/Sorting/page'
-import { LoadingSpinner } from '@/components/LoadingSpinner/page'
+import { Pagination } from '@/components/Pagination'
+import { VideoItem } from './VideoItem'
+import { Categories } from '@/components/Categories'
+import { Sorting } from '@/components/Sorting'
+import { LoadingSpinner } from '@/components/LoadingSpinner'
 
 import {
   ErrorMessage,
