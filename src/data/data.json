@@ -5,9 +5,32 @@
     "title_custom": "Mais Conversão",
     "subtitle": "Conheça as estratégias que <strong>mudaram o jogo</strong> e como aplicá-las no seu negócio"
   },
+  "categories": [
+    {
+      "id": 0,
+      "name": "Agências" 
+    },
+    {
+      "id": 1,
+      "name": "Chatbot" 
+    },
+    {
+      "id": 2,
+      "name": "Marketing Digital" 
+    },
+    {
+      "id": 3,
+      "name": "Geração de Leads" 
+    },
+    {
+      "id": 4,
+      "name": "Mídia Paga" 
+    }
+  ],
   "videos": [
     {
       "id": 0,
+      "created_at": "2023-01-12T23:15:01.965Z",
       "category": "Agências",
       "title": "Principais plataformas de marketing conversacional",
       "video_id": "yju8RTdhHQ0",
@@ -37,6 +60,7 @@
     },
     {
       "id": 1,
+      "created_at": "2023-02-12T23:15:01.965Z",
       "category": "Chatbot",
       "title": "Como usar a inteligência artificial nos negócios?",
       "video_id": "lzuB5jLaLWc",
@@ -56,6 +80,7 @@
     },
     {
       "id": 2,
+      "created_at": "2023-02-22T23:15:01.965Z",
       "category": "Mídia Paga",
       "title": "Alternativas para um futuro sem cookies",
       "video_id": "vcx76GCSuXA",
@@ -70,7 +95,8 @@
     },
     {
       "id": 3,
-      "category": "Marketing Digital",
+      "created_at": "2023-03-12T23:15:01.965Z",
+      "category": "Mídia Paga",
       "title": "Por dentro da plataforma da Leadster",
       "video_id": "94RY0tD4chE",
       "description": "Lorem ipsum dolor sit amet",
@@ -89,6 +115,7 @@
     },
     {
       "id": 4,
+      "created_at": "2023-04-12T23:15:01.965Z",
       "category": "Geração de Leads",
       "title": "Referências para Startups: Livros, Cursos e Profissionais",
       "video_id": "uKlBCWtbw9w",
@@ -97,6 +124,7 @@
     },
     {
       "id": 5,
+      "created_at": "2023-05-12T23:15:01.965Z",
       "category": "Mídia Paga",
       "title": "Quanto investir em Mídia Paga? A pergunta de MILHÕES",
       "video_id": "GcvZ9dWhRks",
@@ -126,6 +154,7 @@
     },
     {
       "id": 6,
+      "created_at": "2023-06-12T23:15:01.965Z",
       "category": "Mídia Paga",
       "title": "Por que apostar no Marketing Conversacional? Conheça os benefícios para empresas",
       "video_id": "nPlyLHqDaJw",
@@ -140,6 +169,7 @@
     },
     {
       "id": 7,
+      "created_at": "2023-06-14T23:15:01.965Z",
       "category": "Agências",
       "title": "Qual a diferença entre os cookies first-party e third-party?",
       "video_id": "sgddXeJfR64",
@@ -154,6 +184,7 @@
     },
     {
       "id": 8,
+      "created_at": "2023-06-18T23:15:01.965Z",
       "category": "Chatbot",
       "title": "Inteligência artificial e empregabilidade",
       "video_id": "o6qeMW-UUb0",
@@ -162,6 +193,7 @@
     },
     {
       "id": 9,
+      "created_at": "2023-06-22T23:15:01.965Z",
       "category": "Geração de Leads",
       "title": "Estratégias de curto e longo prazo no Marketing Digital",
       "video_id": "PHAfkczqlMY",

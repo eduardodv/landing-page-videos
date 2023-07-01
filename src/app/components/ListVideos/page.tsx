@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import { Pagination } from '@/components/Pagination/page'
 import { VideoItem } from './VideoItem/page'
@@ -17,6 +17,11 @@ import {
 
 import data from '@/data/data.json'
 
+interface CategoriesProps {
+  id: number
+  name: string
+}
+
 interface File {
   name: string
   file: string
@@ -25,6 +30,7 @@ interface File {
 
 interface VideoProps {
   id: number
+  created_at: string
   category: string
   title: string
   video_id: string
@@ -33,34 +39,107 @@ interface VideoProps {
 }
 
 export function ListVideos() {
+  const [categories, setCategories] = useState<CategoriesProps[]>([])
+  const [selectedCategory, setSelectedCategory] = useState('all')
   const [videos, setVideos] = useState<VideoProps[]>([])
   const [loadingVideos, setLoadingVideos] = useState(true)
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage] = useState(9)
+  const [orderByVideos, setOrderByVideos] = useState('')
+
+  const targetRef = useRef<null | HTMLElement>(null)
+
+  let totalPosts = videos.length
 
   useEffect(() => {
+    setCategories(data.categories)
     setVideos(data.videos)
     setLoadingVideos(false)
   }, [])
 
-  const indexOfLastPost = currentPage * postsPerPage
-  const indexOfFirstPost = indexOfLastPost - postsPerPage
-  const currentPosts = videos.slice(indexOfFirstPost, indexOfLastPost)
-
-  function paginate(pageNumber: any) {
+  function paginate(pageNumber: number) {
     setCurrentPage(pageNumber)
+
+    if (targetRef.current) {
+      targetRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  function orderBy(value: string) {
+    setOrderByVideos(value)
+  }
+
+  function sortVideosById(value: VideoProps[]) {
+    return value.sort((a: VideoProps, b: VideoProps) => a.id - b.id)
+  }
+
+  function sortVideosByName(value: VideoProps[]) {
+    return value.sort((a: VideoProps, b: VideoProps) =>
+      a.title.localeCompare(b.title),
+    )
+  }
+
+  function sortVideosByDate(value: VideoProps[]) {
+    return value.sort((a: VideoProps, b: VideoProps) =>
+      b.created_at.localeCompare(a.created_at),
+    )
+  }
+
+  function Sort() {
+    if (orderByVideos === 'asc') {
+      return sortVideosByName(videos)
+    }
+
+    if (orderByVideos === 'date') {
+      return sortVideosByDate(videos)
+    }
+
+    return sortVideosById(videos)
+  }
+
+  function currentPosts() {
+    let currentVideos = []
+    const sortedVideos = Sort()
+
+    if (selectedCategory === 'all') {
+      currentVideos = sortedVideos
+    } else {
+      currentVideos = sortedVideos.filter(
+        (item: VideoProps) => item.category === selectedCategory,
+      )
+    }
+
+    const indexOfLastPost = currentPage * postsPerPage
+    const indexOfFirstPost = indexOfLastPost - postsPerPage
+    totalPosts = currentVideos.length
+
+    return currentVideos.slice(indexOfFirstPost, indexOfLastPost)
+  }
+
+  function selectCategory(category: string) {
+    if (category === selectedCategory) {
+      setSelectedCategory('all')
+    } else {
+      setSelectedCategory(category)
+    }
+
+    setCurrentPage(1)
   }
 
   return (
-    <ListVideosContainer>
+    <ListVideosContainer ref={targetRef}>
       <div className="container">
         <HeaderFilters>
-          <Categories />
-          <Sorting />
+          <Categories
+            categories={categories}
+            selectCategory={selectCategory}
+            isSelected={selectedCategory}
+          />
+          <Sorting orderBy={orderBy} orderByVideos={orderByVideos} />
         </HeaderFilters>
         {loadingVideos && <LoadingSpinner />}
         <List>
-          {currentPosts.map((item) => {
+          {currentPosts().map((item: VideoProps) => {
             return (
               <VideoItem
                 key={item.id}
@@ -73,13 +152,13 @@ export function ListVideos() {
             )
           })}
         </List>
-        {!loadingVideos && videos.length <= 0 && (
+        {!loadingVideos && currentPosts().length <= 0 && (
           <ErrorMessage>Nenhum vídeo encontrato.</ErrorMessage>
         )}
-        {!loadingVideos && (
+        {!loadingVideos && totalPosts > 0 && (
           <Pagination
             postsPerPage={postsPerPage}
-            totalPosts={videos.length}
+            totalPosts={totalPosts}
             currentPage={currentPage}
             paginate={paginate}
           />

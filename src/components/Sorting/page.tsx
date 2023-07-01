@@ -1,15 +1,23 @@
+import { ChangeEvent } from 'react'
 import { SortingContainer } from './styles'
 
-export function Sorting() {
+interface SortingProps {
+  orderByVideos: string
+  orderBy: (orderby: string) => void
+}
+
+export function Sorting({ orderByVideos, orderBy }: SortingProps) {
+  function handleOrderList(event: ChangeEvent<HTMLSelectElement>) {
+    orderBy(event.target.value)
+  }
+
   return (
     <SortingContainer>
       <strong>Ordenar por</strong>
-      <select name="selectOrder">
+      <select value={orderByVideos} onChange={handleOrderList}>
         <option value="">Selecione</option>
-        <option value="data" selected>
-          Data de Publicação
-        </option>
-        <option value="name">Nome</option>
+        <option value="date">Data de Publicação</option>
+        <option value="asc">Ordem Alfabética</option>
       </select>
     </SortingContainer>
   )
