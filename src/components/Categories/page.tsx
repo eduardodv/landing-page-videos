@@ -1,13 +1,38 @@
 import { CategoriesContainer, Category } from './styles'
 
-export function Categories() {
+interface CategoryProps {
+  id: number
+  name: string
+}
+
+interface CategoriesProps {
+  categories: CategoryProps[]
+  isSelected: string
+  selectCategory: (category: string) => void
+}
+
+export function Categories({
+  categories,
+  isSelected,
+  selectCategory,
+}: CategoriesProps) {
+  function handleSelectCategory(category: string) {
+    selectCategory(category)
+  }
+
   return (
     <CategoriesContainer>
-      <Category>Agências</Category>
-      <Category>Chatbot</Category>
-      <Category>Marketing Digial</Category>
-      <Category className="active">Geração de Leads</Category>
-      <Category>Mídia Paga</Category>
+      {categories.map((category) => {
+        return (
+          <Category
+            className={isSelected === category.name ? 'active' : ''}
+            onClick={() => handleSelectCategory(category.name)}
+            key={category.id}
+          >
+            {category.name}
+          </Category>
+        )
+      })}
     </CategoriesContainer>
   )
 }
