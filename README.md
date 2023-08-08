@@ -15,6 +15,9 @@ Na hora de estruturar as pastas resolvi separar em vários componentes para sere
 
 [Landing Page](https://landing-page-videos.vercel.app/)
 
+![landing-page-leadster](https://github.com/eduardodv/landing-page-videos/assets/8463362/a323a736-36bc-4ed5-9698-f106519a8d9e)
+
+
 ## Rodando o projeto
 
 Primeiro, execute o servidor de desenvolvimento:
